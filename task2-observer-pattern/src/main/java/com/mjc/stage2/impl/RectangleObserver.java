@@ -13,7 +13,7 @@ public class RectangleObserver implements Observer {
         Rectangle rectangle = event.getSource();
         double perimeter = 2 * (rectangle.getSideA() + rectangle.getSideB());
         double square = rectangle.getSideA() * rectangle.getSideB();
-        new RectangleValues(perimeter, square);
+        new RectangleValues(square, perimeter);
         System.out.print("Perimeter: " + perimeter);
         System.out.print("Square: " + square);
     }
